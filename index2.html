@@ -1,0 +1,46 @@
+<html>
+    <head><title>HTML2</title></head>
+    <body>
+        <form>
+            <label>Choose Your Country(South/East/SouthEast Asia))</label><br/>
+            <input type="radio" name="myradio" value="Nepal">Nepal<br/>
+            <input type="radio" name="myradio" value="India">India<br/>
+            <input type="radio" name="myradio" value="Bangladesh">Bangladesh<br/>
+            <input type="radio" name="myradio" value="Bhutan">Bhutan<br/>
+            <input type="radio" name="myradio" value="Sri Lanka">Sri Lanka<br/>
+            <input type="radio" name="myradio" value="Maldives">Maldives<br/>
+            <input type="radio" name="myradio" value="Pakistan">Pakistan<br/>
+            <input type="radio" name="myradio" value="Afghanistan">Afghanistan<br/>
+            <input type="radio" name="myradio" value="Burma">Burma<br/>
+            <input type="radio" name="myradio" value="Thailand">Thailand<br/>
+            <input type="radio" name="myradio" value="Laos">Laos<br/>
+            <input type="radio" name="myradio" value="Vietnam">Vietnam<br/>
+            <input type="radio" name="myradio" value="Cambodia">Cambodia<br/>
+            <input type="radio" name="myradio" value="Indonesia">Indonesia<br/>
+            <input type="radio" name="myradio" value="Malaysia">Malaysia<br/>
+            <input type="radio" name="myradio" value="Singapore">Singapore<br/>
+            <input type="radio" name="myradio" value="Brunei">Brunei<br/>
+            <input type="radio" name="myradio" value="Mainland China">Mainland China<br/>
+            <input type="radio" name="myradio" value="Republic of China(Taiwan)">Republic of China(Taiwna)<br/>
+            <input type="radio" name="myradio" value="North Korea">North Korea<br/>
+            <input type="radio" name="myradio" value="South Korea">South Korea<br/>
+            <input type="radio" name="myradio" value="Hongkong(SAR China)">Hongkong(SAR China)<br/>
+            <input type="radio" name="myradio" value="Macau(SAR China)">Macau(SAR China)<br/>
+            <input type="radio" name="myradio" value="Japan">Japan<br/>
+            <input type="radio" name="myradio" value="Mongolia">Mongolia<br/>
+            <input type="radio" name="myradio" value="Philippines">Philippines<br/>
+            <input type="radio" name="myradio" value="Timor-Leste">Timor-Leste<br/>
+            <button type="button" onclick="asia()">Confirm Country</button>
+            <script>
+                function asia(){
+                    var radio = document.getElementsByName("myradio");
+                    for(i=0; i<radio.length; i++){
+                        if(radio[i].checked)
+                        alert(radio[i].value);
+
+                    }
+                }
+            </script>
+        </form>
+    </body>
+</html>

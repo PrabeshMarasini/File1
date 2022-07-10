@@ -1,0 +1,19 @@
+<html>
+    <head><title>HTML7</title></head>
+    <body>
+        <label class="reqd">First Name</label><br/>
+        <label class="reqd">Second Name</label><br/>
+        <label class="apple">Third Name</label><br/>
+        <label class="reqd">Fourth Name</label><br/>
+        <label class="reqd">Fifth Name</label><br/>
+        <script>
+            let a = document.querySelectorAll(".reqd");
+            a.forEach((c)=>{ //forEach: calls a function for each element in an array
+                               //
+                let b=document.createTextNode(" * "); //createTextNode: Create a text node and append it to the document
+                c.append(b);
+            });
+            </script>
+
+    </body>
+</html>

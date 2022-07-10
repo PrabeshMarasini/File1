@@ -1,0 +1,27 @@
+<html>
+    <head><title>HTML3</title></head>
+    <body>
+        <form>
+            <label>Select Your Semester</label><br/>
+            <input type="checkbox" name="check" value="I Semester">I Semester<br/>
+            <input type="checkbox" name="check" value="II Semester">II Semester<br/>
+            <input type="checkbox" name="check" value="III Semester">III Semester<br/>
+            <input type="checkbox" name="check" value="IV Semester">IV Semester<br/>
+            <input type="checkbox" name="check" value="V Semester">V Semester<br/>
+            <input type="checkbox" name="check" value="VI Semester">VI Semester<br/>
+            <input type="checkbox" name="check" value="VII Semester">VII Semester<br/>
+            <input type="checkbox" name="check" value="VIII Semester">VIII Semester<br/>
+            <button type="button" onclick="asiaa()">Confirm</button>
+            <script>
+                function asiaa(){
+                    var checkbox = document.getElementsByName("check");
+                    for(i=0; i<checkbox.length; i++){
+                        if(checkbox[i].checked)
+                        alert(checkbox[i].value);
+
+                    }
+                }
+            </script>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head><title>HTML1</title></head>
+    <body>
+        <form>
+            <label>Passsword</label>
+            <input type="password" id="pass" value=""><br/>
+            <label>Re enter Password</label>
+            <input type="password" id="passs" value=""><br/><br/>
+            <button type="button" onclick="passw()">Confirm Password</button>
+            <script>
+                function passw(){
+                    let a = document.getElementById("pass").value;
+                    let b = document.getElementById("passs").value;
+                    if(a==""){
+                        alert("Field cannot be Empty:-(");
+                    }
+                    if(a != b){
+                        alert("Password doesnot match");
+                    }
+                    if(a.length < 8){
+                            alert("Minimum 8 characters Expected.");
+                    }
+                    if(a == b & a.length == b.length  & a.length > 8){
+                        alert("Login Successful!");
+                    }
+                    }
+            </script>
+        </form>
+    </body>
+</html>

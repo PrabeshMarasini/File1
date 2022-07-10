@@ -1,0 +1,22 @@
+<html>
+    <head><title>HTML5</title></head>
+    <body>
+       <h1 id="namee">Hello World!!</h1><br/>
+       <button type="button" id="btn" onclick="coloor()">Change Color</button>
+       <script>
+        let body = document.getElementById("namee");
+        let button = document.getElementById("btn");
+        let colors = ['red', 'blue', 'yellow', 'green', 'cyan'];
+        button.addEventListener('click',function(){
+            const colorIndex=parseInt(Math.random()*colors.length);
+            body.style.borderColor = colors[colorIndex];
+        })
+       </script>
+       <style>
+        h1{
+            border: 3px solid;
+        }
+       </style>
+    </script>
+    </body>
+</html>
