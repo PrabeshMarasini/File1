@@ -1,0 +1,43 @@
+<html>
+    <head><title>Password</title></head>
+    <body>
+        <form>
+            <ul>Password Validation</ul>
+            <li>At least 8 characters</li>
+            <li>At least 2 numbers, 2 alphabetic characters
+                and one special character</li><br/>
+            <label>Password</label>
+            <input type="password" id="pass"><br/>
+            <label>Re-enter Password</label>
+            <input type="password" id="pass1"><br/>
+            <button id="passb" onclick="prabesh()">Confirm</button>
+            <script>
+                function prabesh(){
+                    let gobindey = ['!' , '  %']
+                    let a = document.getElementById("pass").value;
+                    let b = document.getElementById("pass1").value;
+                    var upper = /[A-Z]/;
+                    var lower = /[a-z]/;
+                    var number = /[0-9]/;
+                    
+                    {
+                        if(a.length == ""){
+                            alert("Password field cannot be empty.");
+                        }if(a.length < 8){
+                            alert("Password's length must be at least 8 characters.")
+                        }if(a != b){
+                            alert("Passwords do not match.")
+                        }for(let i =0; i < gobindey.length; i++)
+                        {
+                            if(a.indexOf(gobindey[i]) > 0){
+                                alert("Special character");
+                            }else{
+                                alert("invalid");
+                        }
+                    }
+                }
+            }
+            </script>
+        </form>
+    </body>
+</html>
